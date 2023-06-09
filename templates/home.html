@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Sequence Logo Visualization</h1>
+
+<form action="/" method="post" enctype="multipart/form-data">
+  <textarea name="Input" rows="4" cols="50" placeholder="Input is a list of same length sequence separated by new line. The maximum sequence length is 16, the maximum number of sequences is 16."></textarea>
+  <br>
+  <input type="file" name="file">
+  <br>
+  <input type="submit" value="gen">
+  <br>
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="{{ url_for('static', filename=image_path) }}" alt="Image" width="600" height="200"></a><br>
+  {{ form.text.label }} <br><hr>
+    {{ form.submit1 }} <br>
+    {{ form.submit2 }} <br>
+    {{ form.submit3 }} <br>
+</form>
+</body>
+</html>
